@@ -1227,8 +1227,7 @@ list<tConformer> generateConformers(OBMol& piMol, vector<RotatableBond>& piRotat
   list<tConformer>::iterator itConformers ;
   list<tConformer>::iterator itConformers2 ;
   vector< vector<float> > distances(atomIdxs.size(),vector<float>(atomIdxs.size(),0));
-
-  unsigned int NUM_PREREFINED_TMP;
+  unsigned int NUM_PREREFINED_TMP = 200;
 
 #ifdef _DEBUG_TIMES
   OBStopwatch TMPTIME;
